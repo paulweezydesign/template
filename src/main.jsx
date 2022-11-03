@@ -8,6 +8,7 @@ import FileRoutes from './routes';
 render(
   <StrictMode>
     <BrowserRouter>
+ 
       <FileRoutes />
     </BrowserRouter>
   </StrictMode>,

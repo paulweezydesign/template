@@ -1,10 +1,22 @@
+import {Link } from 'react-router-dom'
+
 export default function Index() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-32">
+    <>
+              <nav className='text-xl flex justify-evenly'>
+      <Link to='/'>Home</Link>
+      <Link to='/about'>About</Link>
+        <Link to='/kittens'>Kittens</Link>
+        <Link to='/resources'>Resources</Link>
+        <Link to='/contact'>Contact</Link>
+      
+    </nav>
+    <div className="grid grid-cols-1 place-items-center h-screen">
       <div>
-        <h1 className="text-white font-extrabold lg:text-5xl xl:text-6xl">Hello!</h1>
-        <h2 className="text-white font-extrabold lg:text-3xl xl:text-4xl">Make something wonderful</h2>
+        <h1 className="text-black text-7xl font-black">Home</h1>
+       
       </div>
     </div>
+    </>
   );
 }
